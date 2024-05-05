@@ -1,5 +1,6 @@
 let gameBoardModule = (function() {
     let gameBoard = [];
+    let playerArray = [];
     return {};
 }) ();
 
