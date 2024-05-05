@@ -1,32 +1,30 @@
-html, body {
-    margin: 0;
-    padding: 0;
+*{
     background-color: beige;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    font-family: "Permanent Marker", cursive;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
-    height: 400px;
-    width: 400px;
-    background-color: gray;
-}
-
-.grid-box {
-    border: 1px solid blue;
-    color: red;
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
     font-size: 50px;
-    display: grid;
-    grid-template-rows: 1fr .3fr;
+    cursor: pointer;
 }
 
-.title {
-    color: rgb(5, 5, 5);
+#gameContainer{
+    
     text-align: center;
-    font-size: 50px;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+button{
+    background-color: red;
+    cursor: pointer;
 }
